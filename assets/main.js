@@ -1,13 +1,13 @@
 const posts = [
   {
-    title: 'Discover Bangkok\'s underwater wonderland!',
+    title: 'Discover Sydney\'s underwater wonderland!',
     slug: 'bangkok-underwater-wonderland-2024',
     date: '2025-12-03',
     category: 'Travel & Stay',
-    excerpt: 'Dive into Southeast Asia\'s largest aquarium, where vibrant coral reefs, mysterious deep-sea creatures, and interactive marine experiences await in the heart of Bangkok.',
+    excerpt: 'Slip beneath Sydney’s harbourline into a world of kelp forests, graceful rays, and luminous Pacific life at SEA LIFE Sydney Aquarium.',
     image: 'images/头图.png',
     link: 'posts/bangkok-underwater-wonderland-2024.html',
-    tags: ['Bangkok', 'Aquarium', 'Marine Life']
+    tags: ['Sydney', 'Aquarium', 'Marine Life']
   },
   {
     title: '24/7 Customer Support—We\'re Always Here for You',
