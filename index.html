@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EverydayNes | Lifestyle Zine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Montserrat+Alternates:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-p1CmT8G9q4CPrlG/pX9nuSUXwxLBzME2YkdE+5EYXPLkZXl2b7xvFeoJEB6Digw1VE3D6Z0SqnX+0Go9p+uglA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="logo">EverydayNes</div>
+      <nav class="nav">
+        <button class="nav-link active" data-category="all">All</button>
+        <button class="nav-link" data-category="Clothing & Accessories">Clothing & Accessories</button>
+        <button class="nav-link" data-category="Health & Beauty">Health & Beauty</button>
+        <button class="nav-link" data-category="Home & Garden">Home & Garden</button>
+        <button class="nav-link" data-category="Travel & Stay">Travel & Stay</button>
+        <button class="nav-link" data-category="Finance & Insurance">Finance & Insurance</button>
+        <button class="nav-link" data-category="Food & Beverage">Food & Beverage</button>
+      </nav>
+      <div class="top-actions">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search articles or keywords">
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+      <div class="socials">
+        <a href="https://instagram.com/everydaynes" aria-label="Instagram" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm5 3.5A3.5 3.5 0 1 1 8.5 12 3.5 3.5 0 0 1 12 8.5zm0 2A1.5 1.5 0 1 0 13.5 12 1.5 1.5 0 0 0 12 10.5zm4.75-4.4a1.05 1.05 0 1 1-1.05 1.05 1.05 1.05 0 0 1 1.05-1.05z"/></svg>
+        </a>
+        <a href="https://dribbble.com/everydaynes" aria-label="Dribbble" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M12 2.25A9.75 9.75 0 1 0 21.75 12 9.75 9.75 0 0 0 12 2.25zm6.9 9a7.93 7.93 0 0 0-.52-2.28 14.6 14.6 0 0 1-3.4 1.2 22.2 22.2 0 0 0-.7-1.4 13 13 0 0 0 2.9-2.4 7.77 7.77 0 0 1 1.72 4.88zm-2.82-5.7a11.4 11.4 0 0 1-2.6 2.2 18.3 18.3 0 0 0-3-3.78A7.78 7.78 0 0 1 16.08 5.6zm-5.18-1.1a16.5 16.5 0 0 1 3.15 4.02A13.5 13.5 0 0 1 9.2 9.5a16.4 16.4 0 0 0-1.72-3.8A7.8 7.8 0 0 1 10.9 4.5zM6.8 6.5a14.6 14.6 0 0 1 2 3.65 13.9 13.9 0 0 0-4.7.5A7.8 7.8 0 0 1 6.8 6.5zm-2 5.5a6.3 6.3 0 0 1 .2-1.56 12.3 12.3 0 0 1 5.18-.6 23 23 0 0 1 .6 4.16h-.1a14.3 14.3 0 0 0-5.88 2.16A7.77 7.77 0 0 1 4.8 12zm1.7 4.46a12.7 12.7 0 0 1 5-1.82 21.6 21.6 0 0 1 1 2.7 7.74 7.74 0 0 1-6-.88zm7.3 1.62a23.5 23.5 0 0 0-1-2.62 10.9 10.9 0 0 1 4.42-.6 7.8 7.8 0 0 1-3.42 3.22z"/></svg>
+        </a>
+        <a href="https://www.behance.net/everydaynes" aria-label="Behance" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M4.1 6.2h4.3a3.4 3.4 0 0 1 2.5 5.7A3.4 3.4 0 0 1 8.6 18H4.1zm4 5.1c.9 0 1.5-.6 1.5-1.4S9 8.5 8.1 8.5H6.2v2.8zm.2 4.1c1 0 1.7-.7 1.7-1.6s-.7-1.6-1.7-1.6H6.2V15zM13.8 9.7c.6-.9 1.6-1.4 3-1.4 2.2 0 3.7 1.3 3.7 3.6V18h-2.2v-.8a3 3 0 0 1-2.6 1c-1.6 0-2.9-.9-2.9-2.5s1.1-2.4 3-2.6l2.5-.2c0-.9-.5-1.4-1.5-1.4a1.7 1.7 0 0 0-1.6.9zm1.3 4c0 .6.5 1 1.2 1 .9 0 1.6-.6 1.6-1.6v-.4l-1.7.2c-.7.1-1.1.4-1.1.8zM13.4 6h4v1.2h-4z"/></svg>
+        </a>
+        <a href="https://x.com/everydaynes" aria-label="X" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M5 4h3.1l4 5 4.7-5H21l-6.4 7.1 5.9 8.9h-3.1l-4.3-6.4-5 6.4H3l6.7-7.8z"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">ARTFUL DAILY</p>
+          <h1>EverydayNes</h1>
+          <p class="lead">A modern-art lens on style, skincare, home, travel, finance, and food — curated for inspired daily choices.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#articles">Explore</a>
+            <a class="btn ghost" href="products.html">Product Picks</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero secondary">
+        <div class="hero-card">
+          <p class="eyebrow">CURATION</p>
+          <h3>Bold Borders, Artful Cards</h3>
+          <p>Articles land in vibrant framed cards with split-color edges and hover motion for a gallery-like scroll.</p>
+        </div>
+        <div class="hero-card">
+          <p class="eyebrow">DISCOVERY</p>
+          <h3>Categories, Search, Pagination</h3>
+          <p>Filter by six lifestyle verticals, type to search, and page through a dark-theme, gold-accent navigation.</p>
+        </div>
+        <div class="hero-card">
+          <p class="eyebrow">PRODUCTS</p>
+          <h3>Art-frame Product Recs</h3>
+          <p>Every article ends with framed product recommendations; browse all picks in a dedicated gradient gallery.</p>
+        </div>
+      </section>
+
+      <section id="articles" class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">CURATED STORIES</p>
+            <h2>Featured by Category</h2>
+          </div>
+          <div class="filters">
+            <div class="filter-label">Filter by category</div>
+            <div class="filter-tags" id="categoryTags"></div>
+          </div>
+        </div>
+        <div id="articleGrid" class="article-grid"></div>
+        <div id="pagination" class="pagination"></div>
+      </section>
+
+      <section class="section about">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">ABOUT</p>
+            <h2>About EverydayNes</h2>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Mission</h3>
+            <p>Blend artful visuals with expert takes to help readers choose with inspiration and quality.</p>
+          </div>
+          <div class="about-card">
+            <h3>Vision</h3>
+            <p>Be the cross-category lifestyle curator where every day holds a collectible spark.</p>
+          </div>
+          <div class="about-card">
+            <h3>Method</h3>
+            <p>Depth + tested picks + real imagery, wrapped in abstract motion and modern typography.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">CONTACT</p>
+            <h2>Contact</h2>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Partnerships & Media</h3>
+            <p>brand@everydaynes.com</p>
+            <p>We welcome brand collaborations, features, and product testing.</p>
+          </div>
+          <div class="contact-card">
+            <h3>Social</h3>
+            <p>Find us on Instagram, Dribbble, Behance, and X.</p>
+          </div>
+          <div class="contact-card">
+            <h3>Feedback</h3>
+            <p>hello@everydaynes.com</p>
+            <p>Tell us what stories or improvements you’d love to see.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-mission">
+        <h4>EverydayNes</h4>
+        <p>Art-forward inspiration for daily choices with warmth and texture.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#articles">Articles</a>
+        <a href="products.html">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://instagram.com/everydaynes" aria-label="Instagram" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm5 3.5A3.5 3.5 0 1 1 8.5 12 3.5 3.5 0 0 1 12 8.5zm0 2A1.5 1.5 0 1 0 13.5 12 1.5 1.5 0 0 0 12 10.5zm4.75-4.4a1.05 1.05 0 1 1-1.05 1.05 1.05 1.05 0 0 1 1.05-1.05z"/></svg></a>
+        <a href="https://dribbble.com/everydaynes" aria-label="Dribbble" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24"><path d="M12 2.25A9.75 9.75 0 1 0 21.75 12 9.75 9.75 0 0 0 12 2.25zm6.9 9a7.93 7.93 0 0 0-.52-2.28 14.6 14.6 0 0 1-3.4 1.2 22.2 22.2 0 0 0-.7-1.4 13 13 0 0 0 2.9-2.4 7.77 7.77 0 0 1 1.72 4.88zm-2.82-5.7a11.4 11.4 0 0 1-2.6 2.2 18.3 18.3 0 0 0-3-3.78A7.78 7.78 0 0 1 16.08 5.6zm-5.18-1.1a16.5 16.5 0 0 1 3.15 4.02A13.5 13.5 0 0 1 9.2 9.5a16.4 16.4 0 0 0-1.72-3.8A7.8 7.8 0 0 1 10.9 4.5zM6.8 6.5a14.6 14.6 0 0 1 2 3.65 13.9 13.9 0 0 0-4.7.5A7.8 7.8 0 0 1 6.8 6.5zm-2 5.5a6.3 6.3 0 0 1 .2-1.56 12.3 12.3 0 0 1 5.18-.6 23 23 0 0 1 .6 4.16h-.1a14.3 14.3 0 0 0-5.88 2.16A7.77 7.77 0 0 1 4.8 12zm1.7 4.46a12.7 12.7 0 0 1 5-1.82 21.6 21.6 0 0 1 1 2.7 7.74 7.74 0 0 1-6-.88zm7.3 1.62a23.5 23.5 0 0 0-1-2.62 10.9 10.9 0 0 1 4.42-.6 7.8 7.8 0 0 1-3.42 3.22z"/></svg></a>
+        <a href="https://www.behance.net/everydaynes" aria-label="Behance" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24"><path d="M4.1 6.2h4.3a3.4 3.4 0 0 1 2.5 5.7A3.4 3.4 0 0 1 8.6 18H4.1zm4 5.1c.9 0 1.5-.6 1.5-1.4S9 8.5 8.1 8.5H6.2v2.8zm.2 4.1c1 0 1.7-.7 1.7-1.6s-.7-1.6-1.7-1.6H6.2V15zM13.8 9.7c.6-.9 1.6-1.4 3-1.4 2.2 0 3.7 1.3 3.7 3.6V18h-2.2v-.8a3 3 0 0 1-2.6 1c-1.6 0-2.9-.9-2.9-2.5s1.1-2.4 3-2.6l2.5-.2c0-.9-.5-1.4-1.5-1.4a1.7 1.7 0 0 0-1.6.9zm1.3 4c0 .6.5 1 1.2 1 .9 0 1.6-.6 1.6-1.6v-.4l-1.7.2c-.7.1-1.1.4-1.1.8zM13.4 6h4v1.2h-4z"/></svg></a>
+        <a href="https://x.com/everydaynes" aria-label="X" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24"><path d="M5 4h3.1l4 5 4.7-5H21l-6.4 7.1 5.9 8.9h-3.1l-4.3-6.4-5 6.4H3l6.7-7.8z"/></svg></a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
+
