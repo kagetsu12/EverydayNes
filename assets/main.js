@@ -2,7 +2,7 @@ const posts = [
   {
     title: 'Discover Bangkok\'s underwater wonderland!',
     slug: 'bangkok-underwater-wonderland-2024',
-    date: '2024-12-03',
+    date: '2025-12-03',
     category: 'Travel & Stay',
     excerpt: 'Dive into Southeast Asia\'s largest aquarium, where vibrant coral reefs, mysterious deep-sea creatures, and interactive marine experiences await in the heart of Bangkok.',
     image: 'images/头图.png',
